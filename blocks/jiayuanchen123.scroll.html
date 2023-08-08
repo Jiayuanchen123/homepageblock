@@ -9,25 +9,53 @@
 {{/* Access custom front matter options via $block.Params  */}}
 {{/* E.g. mytext via $block.Params.mytext */}}
 
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <h2>滚动词条标题1</h2>
-      <p>滚动词条内容1</p>
-    </div>
-    <div class="carousel-item">
-      <h2>滚动词条标题2</h2>
-      <p>滚动词条内容2</p>
-    </div>
-    <!-- 可以添加更多滚动词条项 -->
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">上一个</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">下一个</span>
-  </button>
+<div id="scroll-container" style="height: 300px; overflow: auto;">
+  <div class="news-title"><strong> A new paper has been accepted by IEEE Transactions on Wireless Communications. </strong></div>
+<strong> A new paper has been accepted by IEEE Transactions on Wireless Communications. </strong>
+<div class="news-title"><strong> A new paper has been accepted by IEEE Transactions on Wireless Communications. </strong></div>
+<p style="font-size:12px">
+H. Lu*, X. Xie, Z. Shi, H. Lei, H. Yang, and J. Cai, “Advanced NOMA assisted semi-grant-free transmission schemes for randomly distributed users”
+</p>
+<i>28th November, 2022</i>
+<hr>
+<div class="news-title"><strong> A new paper has been accepted by IEEE Transactions on Wireless Communications. </strong></div>
+<p style="font-size:12px">
+
+</p>
+<i>18th November, 2022</i>
+<hr>
+<div class="news-title"><strong> A new paper has been accepted by IEEE Systems Journal. </strong></div>
+<p style="font-size:12px">
+L. Gui*, F. Xiao, J. Cai, "In-home monitoring sleep activities and breath rate via WiFi signals".
+</p>
+<i>18th November, 2022</i>
+<hr>
+<div class="news-title"><strong> A new paper has been accepted by The International Journal of Advanced Manufacturing Technology. </strong></div>
+<p style="font-size:12px">
+R. Zhang*, F. Wang, J. Cai, Y. Wang, H. Gun, and J. Zheng, "Digital twin and its applications: A survey".
+</p>
+<i>18th November, 2022</i>
+<hr>
+<div class="news-title"><strong> A new paper has been accepted by IEEE Trans. Mobile Computing. </strong></div>
+<p style="font-size:12px">
+S. D. Okegbile*, J. Cai, A. Alfa, “Practical byzantine fault tolerance-enhanced blockchain-enabled data sharing system: Latency and age of data package analysis”.
+</p>
+<i>14th November, 2022</i>
+<hr>
 </div>
+
+<script>
+  // 获取滚动容器元素
+  var container = document.getElementById("scroll-container");
+  
+  // 设置滚动速度（每隔一段时间滚动的距离）
+  var scrollSpeed = 2; // 值越大滚动速度越快
+  
+  // 每隔一段时间执行滚动操作
+  setInterval(function() {
+    // 滚动容器向上滚动指定距离
+    container.scrollTop += scrollSpeed;
+  }, 100); // 指定滚动间隔时间（单位为毫秒）
+</script>
+
 
