@@ -9,6 +9,25 @@
 {{/* Access custom front matter options via $block.Params  */}}
 {{/* E.g. mytext via $block.Params.mytext */}}
 
-<h2>{{$block.Title}}</h2>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h2>滚动词条标题1</h2>
+      <p>滚动词条内容1</p>
+    </div>
+    <div class="carousel-item">
+      <h2>滚动词条标题2</h2>
+      <p>滚动词条内容2</p>
+    </div>
+    <!-- 可以添加更多滚动词条项 -->
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">上一个</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">下一个</span>
+  </button>
+</div>
 
-<p>{{$block.Content}}</p>
