@@ -1,3 +1,3 @@
-module github.com/jiayuanchen123/wowchemy-block-starter
+module github.com/jiayuanchen123/homepageblock
 
 go 1.19
